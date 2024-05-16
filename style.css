@@ -1,0 +1,74 @@
+/* Basic Reset */
+body, h1, p, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #111;
+    color: #ddd;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+#project-description {
+    width: 80%;
+    max-width: 600px;
+    background-color: #222;
+    border: 2px solid #2ecc71;
+    padding: 20px;
+    box-shadow: 0 0 10px 3px #2ecc71;
+    border-radius: 10px;
+    margin-bottom: 20px; /* Ensures space between the description and the link */
+}
+
+h1 {
+    color: #2ecc71;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Styling for the Next Page Link */
+.next-page-link {
+    display: block;
+    width: fit-content;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #2ecc71;
+    background-color: #222;
+    border: 2px solid #2ecc71;
+    border-radius: 8px;
+    text-decoration: none;
+    text-shadow: 0 0 5px #2ecc71;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.next-page-link:hover {
+    background-color: #2ecc71;
+    color: #111;
+    cursor: pointer;
+}
+.photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr)); 
+    gap: 20px;
+    padding: 20px;
+}
+
+.photos img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
